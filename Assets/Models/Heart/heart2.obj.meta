@@ -1,0 +1,239 @@
+fileFormatVersion: 2
+guid: 9b5ec3433f2b6514ba3fba26caa6eb20
+timeCreated: 1518094526
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Circumflex_branch_of_left_coronary_artery_Mesh
+    100002: Coronary_sinus_Mesh
+    100004: Great_cardiac_vein_Mesh
+    100006: //RootNode
+    100008: Marginal_branch_of_right_coronary_artery_Mesh
+    100010: Mesh
+    100012: Mitral_valve_Mesh
+    100014: Posterior_papillary_muscle_of_left_ventricle_Mesh
+    100016: Posterior_papillary_muscle_of_right_ventricle_Mesh
+    100018: Pulmonary_valve_Mesh
+    100020: Right_posterolateral_branch_of_right_coronary_artery_Mesh
+    100022: Septal_papillary_muscle_of_right_ventricle_Mesh
+    100024: Tricuspid_valve_Mesh
+    100026: Trunk_of_right_coronary_artery_Mesh
+    100028: Wall_of_heart_Mesh
+    100030: Wall_of_heart_Mesh_MeshPart0
+    100032: Wall_of_heart_Mesh_MeshPart1
+    100034: Wall_of_heart_Mesh_MeshPart2
+    400000: Circumflex_branch_of_left_coronary_artery_Mesh
+    400002: Coronary_sinus_Mesh
+    400004: Great_cardiac_vein_Mesh
+    400006: //RootNode
+    400008: Marginal_branch_of_right_coronary_artery_Mesh
+    400010: Mesh
+    400012: Mitral_valve_Mesh
+    400014: Posterior_papillary_muscle_of_left_ventricle_Mesh
+    400016: Posterior_papillary_muscle_of_right_ventricle_Mesh
+    400018: Pulmonary_valve_Mesh
+    400020: Right_posterolateral_branch_of_right_coronary_artery_Mesh
+    400022: Septal_papillary_muscle_of_right_ventricle_Mesh
+    400024: Tricuspid_valve_Mesh
+    400026: Trunk_of_right_coronary_artery_Mesh
+    400028: Wall_of_heart_Mesh
+    400030: Wall_of_heart_Mesh_MeshPart0
+    400032: Wall_of_heart_Mesh_MeshPart1
+    400034: Wall_of_heart_Mesh_MeshPart2
+    2300000: Circumflex_branch_of_left_coronary_artery_Mesh
+    2300002: Coronary_sinus_Mesh
+    2300004: Great_cardiac_vein_Mesh
+    2300006: Marginal_branch_of_right_coronary_artery_Mesh
+    2300008: Mesh
+    2300010: Mitral_valve_Mesh
+    2300012: Posterior_papillary_muscle_of_left_ventricle_Mesh
+    2300014: Posterior_papillary_muscle_of_right_ventricle_Mesh
+    2300016: Pulmonary_valve_Mesh
+    2300018: Right_posterolateral_branch_of_right_coronary_artery_Mesh
+    2300020: Septal_papillary_muscle_of_right_ventricle_Mesh
+    2300022: Tricuspid_valve_Mesh
+    2300024: Trunk_of_right_coronary_artery_Mesh
+    2300026: Wall_of_heart_Mesh_MeshPart0
+    2300028: Wall_of_heart_Mesh_MeshPart1
+    2300030: Wall_of_heart_Mesh_MeshPart2
+    3300000: Circumflex_branch_of_left_coronary_artery_Mesh
+    3300002: Coronary_sinus_Mesh
+    3300004: Great_cardiac_vein_Mesh
+    3300006: Marginal_branch_of_right_coronary_artery_Mesh
+    3300008: Mesh
+    3300010: Mitral_valve_Mesh
+    3300012: Posterior_papillary_muscle_of_left_ventricle_Mesh
+    3300014: Posterior_papillary_muscle_of_right_ventricle_Mesh
+    3300016: Pulmonary_valve_Mesh
+    3300018: Right_posterolateral_branch_of_right_coronary_artery_Mesh
+    3300020: Septal_papillary_muscle_of_right_ventricle_Mesh
+    3300022: Tricuspid_valve_Mesh
+    3300024: Trunk_of_right_coronary_artery_Mesh
+    3300026: Wall_of_heart_Mesh_MeshPart0
+    3300028: Wall_of_heart_Mesh_MeshPart1
+    3300030: Wall_of_heart_Mesh_MeshPart2
+    4300000: Circumflex_branch_of_left_coronary_artery_Mesh
+    4300002: Coronary_sinus_Mesh
+    4300004: Great_cardiac_vein_Mesh
+    4300006: Marginal_branch_of_right_coronary_artery_Mesh
+    4300008: Mesh
+    4300010: Mitral_valve_Mesh
+    4300012: Posterior_papillary_muscle_of_left_ventricle_Mesh
+    4300014: Posterior_papillary_muscle_of_right_ventricle_Mesh
+    4300016: Pulmonary_valve_Mesh
+    4300018: Right_posterolateral_branch_of_right_coronary_artery_Mesh
+    4300020: Septal_papillary_muscle_of_right_ventricle_Mesh
+    4300022: Tricuspid_valve_Mesh
+    4300024: Trunk_of_right_coronary_artery_Mesh
+    4300026: Wall_of_heart_Mesh_MeshPart0
+    4300028: Wall_of_heart_Mesh_MeshPart1
+    4300030: Wall_of_heart_Mesh_MeshPart2
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Circumflex_branch_of_left_coronary_artery_MeshMat
+    second: {fileID: 2100000, guid: 32d797c0826840e4c81cd9fc43cfe1f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Coronary_sinus_MeshMat
+    second: {fileID: 2100000, guid: e4b2310d7dbfed74b8a07710d800d998, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Great_cardiac_vein_MeshMat
+    second: {fileID: 2100000, guid: 35cb967161633e84ab30231ce5155884, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Marginal_branch_of_right_coronary_artery_MeshMat
+    second: {fileID: 2100000, guid: 393f6a6c46de22d4785068562ff6036d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MeshMat
+    second: {fileID: 2100000, guid: ef88e4cef79362b4eb0b4ce538a1be31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mitral_valve_MeshMat
+    second: {fileID: 2100000, guid: f401409073e8a8446b4229708ccfb2d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Posterior_papillary_muscle_of_left_ventricle_MeshMat
+    second: {fileID: 2100000, guid: e9050bdc064b3cb4799e3c0ea345b30b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Posterior_papillary_muscle_of_right_ventricle_MeshMat
+    second: {fileID: 2100000, guid: a33afb86ab795ff47a3185e98bd940c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pulmonary_valve_MeshMat
+    second: {fileID: 2100000, guid: 21bd67754fbc5f34da846f2e80db652c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Right_posterolateral_branch_of_right_coronary_artery_MeshMat
+    second: {fileID: 2100000, guid: 12c73e10cf1dadb40b4ff38284805579, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Septal_papillary_muscle_of_right_ventricle_MeshMat
+    second: {fileID: 2100000, guid: 68c3a27bb72e1de4b804a087ea43b855, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tricuspid_valve_MeshMat
+    second: {fileID: 2100000, guid: b320400d5adff174786db16331efd86f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trunk_of_right_coronary_artery_MeshMat
+    second: {fileID: 2100000, guid: 6d74aaebdc569234588015d7e24a36cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall_of_heart_MeshMat
+    second: {fileID: 2100000, guid: 3634b1fd17dc68040b5fca86701483b4, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
