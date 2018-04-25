@@ -7,6 +7,7 @@ public class OrgansManager : MonoBehaviour
 
 	public static int _OrgansIndex;
 	public static int _moreText;
+	public static int _soundIndex;
 	public GameObject[] _Organs;
 
 	void Awake ()
@@ -18,28 +19,33 @@ public class OrgansManager : MonoBehaviour
 	}
 
 	//Organs Trigger(Action)
-    public void OnOrgansTrigger(int index)
+	public void OnOrgansTrigger (int index)
 	{
 		//set All Organs by false except the Trigger Organs
 		for (int i = 0; i < _Organs.Length; i++) {
 			if (i == index) {
 				_Organs [i].SetActive (true);
-                _OrgansIndex = i;
+                
 			} else {
 				_Organs [i].SetActive (false);
 			}
+			_OrgansIndex = index;
 		}
-
-		// set shared Index by local
-		
-
-		// set shared boolean by local
-	    //_moreText = 1;
+			
 	}
-    public void OnOrganstouch(int MoreText) {
-        _moreText = MoreText;
+
+	public void OnOrganstouch (int MoreText)
+	{
+		_moreText = MoreText;
         
-    }
+	}
+
+	// Determine Sound Display
+
+	public void OnSoundDetermine (int SIndex)
+	{
+		_soundIndex = SIndex;
+	}
 	//Reset All
 	public void ResetAll ()
 	{
@@ -54,5 +60,13 @@ public class OrgansManager : MonoBehaviour
 
 		// set boolean Index by false 
 		_moreText = 0;
+
+		//Reset nav
+		TextManager.desiredMenuPosition = Vector3.zero;
+		TextManager.nav = 0;
+
+		//reset Sound
+		TextManager.NPSound = false;
+
 	}
 }

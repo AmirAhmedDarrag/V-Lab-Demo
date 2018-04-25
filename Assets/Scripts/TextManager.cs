@@ -7,22 +7,20 @@ public class TextManager : MonoBehaviour
 {
 	public RectTransform[] _Panel;
 	public Button _Next, _Previous;
-	private Vector3 desiredMenuPosition;
-	private int nav;
-    
+	public static Vector3 desiredMenuPosition;
+	public static bool NPSound;
+	public static int nav;
+	private int c;
+
+
 	void Awake ()
 	{
-        
+		NPSound = false;
 		//initialize 
 		nav = 0;
-       
+		c = 0;
 	}
-
-	void Start ()
-	{
-        
-        //HideText(nav);
-   	}
+		
 	// Update is called once per frame
 	void Update ()
 	{
@@ -35,8 +33,6 @@ public class TextManager : MonoBehaviour
 		// if Organs selected 
 		else if (OrgansManager._OrgansIndex >= 0) {
 			TextDisplay ();
-            
-            _Panel[OrgansManager._OrgansIndex].anchoredPosition3D = Vector3.Lerp(_Panel[OrgansManager._OrgansIndex].anchoredPosition3D, desiredMenuPosition, 0.1f);
 		}
 
         
@@ -55,15 +51,16 @@ public class TextManager : MonoBehaviour
 	{
 		for (int i = 0; i < _Panel.Length; i++) {
 			if (i == OrgansManager._OrgansIndex) {
-                Debug.Log(OrgansManager._OrgansIndex);
-				_Panel [OrgansManager._OrgansIndex].gameObject.SetActive (true);
+				_Panel [i].gameObject.SetActive (true);
 			} else {
-				_Panel [OrgansManager._OrgansIndex].gameObject.SetActive (false);
+				_Panel [i].gameObject.SetActive (false);
 			}
 		}
 		if (OrgansManager._moreText == 1) {
 			_Next.gameObject.SetActive (true);
 			_Previous.gameObject.SetActive (true);
+			_Panel [OrgansManager._OrgansIndex].anchoredPosition3D = Vector3.Lerp (_Panel [OrgansManager._OrgansIndex].anchoredPosition3D, desiredMenuPosition, 0.1f);
+			HideText (nav);
 		} else {
 			_Next.gameObject.SetActive (false);
 			_Previous.gameObject.SetActive (false);
@@ -72,9 +69,13 @@ public class TextManager : MonoBehaviour
 	// Next Button Clicked
 	public void NextClicked ()
 	{
-		nav++;
-		desiredMenuPosition = Vector3.left * 883 * nav;
-        //HideText(nav);
+		
+		if (nav < c - 1) {
+			nav++;
+			desiredMenuPosition = Vector3.left * 883 * nav;
+			NPSound = true;
+		}
+
 	}
 
 	// Previous Button Clicked
@@ -84,14 +85,25 @@ public class TextManager : MonoBehaviour
 		if (nav > 0) {
 			nav--; 
 			desiredMenuPosition = Vector3.left * 883 * nav;
-		//	HideText (nav);
+			NPSound = true;
 		}
 	}
 
 	//Hide Text
-	/*private void HideText (int j)
+	private void HideText (int j)
 	{
-        _Panel[0].GetChild(0).;
-	}*/
+		c = 0;
+		while (_Panel [OrgansManager._OrgansIndex].GetChild (c).name != "GameObject") {
+			if (c == j) {
+				_Panel [OrgansManager._OrgansIndex].GetChild (c).gameObject.SetActive (true);
+			} else {
+				_Panel [OrgansManager._OrgansIndex].GetChild (c).gameObject.SetActive (false);
+			}
+			c++;
+		}
+
+	}
+
+
 
 }
