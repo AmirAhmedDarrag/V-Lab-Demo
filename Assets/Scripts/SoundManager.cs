@@ -4,36 +4,43 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
+    public static bool soundDisplay;
+    public static bool soundPause;
+    public AudioClip[] _TextSounds;
+    public AudioSource _SrcSound;
 
-	public AudioClip[] _TextSounds;
-	public AudioSource _SrcSound;
 
+    // Update is called once per frame
+    void Update()
+    {
 
-	// Update is called once per frame
-	void Update ()
-	{
+        if (OrgansManager._OrgansIndex == -1 || TextManager.NPSound)
+        {
+            _SrcSound.Stop();
+            TextManager.NPSound = false;
+        }
 
-		if (OrgansManager._OrgansIndex == -1 || TextManager.NPSound) {
-			_SrcSound.Stop ();
-			TextManager.NPSound = false;
-		}
-	}
-	// On Display Sound Clicked
-	public void OnSoundDisplay ()
-	{
-		if (OrgansManager._moreText == 1) {
-			_SrcSound.clip = _TextSounds [OrgansManager._soundIndex + TextManager.nav];
-		} else {
-			_SrcSound.clip = _TextSounds [OrgansManager._soundIndex];
-		}
-		_SrcSound.Play ();
-	}
+        //sound Display
+        if (soundDisplay) {
+            if (OrgansManager._moreText == 1)
+            {
+                _SrcSound.clip = _TextSounds[OrgansManager._soundIndex + TextManager.nav];
+            }
+            else
+            {
+                _SrcSound.clip = _TextSounds[OrgansManager._soundIndex];
+            }
+            _SrcSound.Play();
 
-	// On pause Sound Clicked
+            soundDisplay = false;
+        }
 
-	public void OnSoundPause ()
-	{
-		_SrcSound.Pause ();
-	}
+        //sound Pause
+        if (soundPause) {
+            _SrcSound.Pause();
 
+            soundPause = false;
+        }
+    }
+ 
 }

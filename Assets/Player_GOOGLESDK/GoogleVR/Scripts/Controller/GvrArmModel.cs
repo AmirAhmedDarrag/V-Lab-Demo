@@ -263,7 +263,7 @@ public class GvrArmModel : MonoBehaviour {
     }
     return cam.transform.forward;
 #else
-    return InputTracking.GetLocalRotation(VRNode.Head) * Vector3.forward;
+    return UnityEngine.XR.InputTracking.GetLocalRotation(UnityEngine.XR.XRNode.Head) * Vector3.forward;
 #endif // UNITY_EDITOR
   }
 

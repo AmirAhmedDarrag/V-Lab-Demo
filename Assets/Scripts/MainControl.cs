@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainControl : MonoBehaviour {
     public GameObject _menu,_FPC,_Camera;
@@ -29,5 +30,30 @@ public class MainControl : MonoBehaviour {
         _menu.SetActive(false);
         _DoorOpen = true;
 
+    }
+    public void LoadScene(string SceneName) {
+        SceneManager.LoadScene(SceneName);
+    }
+    public void ResetAll() {
+        OrgansManager.resetAll = true;
+        AnimationController.ResetAll = true;
+    }
+
+    public void NextClicked()
+    {
+        TextManager.nextClicked = true;
+    }
+    public void PrevClicked()
+    {
+        TextManager.prevClicked = true;
+    }
+
+    public void SoundDiplay() {
+        SoundManager.soundDisplay = true;
+    }
+
+    public void SoundPause()
+    {
+        SoundManager.soundPause = true;
     }
 }
